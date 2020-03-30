@@ -1,4 +1,3 @@
-
 #pip install: discord, asyncio, websockets, aiohttp
 #requests, beautifulsoup4
 
