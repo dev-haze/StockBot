@@ -3,7 +3,6 @@
 
 import discord
 
-
 import datetime
 import bs4
 import requests
@@ -19,21 +18,21 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/53
 
 
 
-#디스코드
+#디스코드 
 #===================================================
-client = discord.Client()
+client= discord.Client()
 
 #시작
-@client.event
+x@client.event
 async def on_ready():
- print(f'{client.user}에 로그인하였습니다!')
+ print(f'{bot.user}에 로그인하였습니다!')
 
 #--------------------------
 #작동중
 @client.event
 async def on_message(message):
  s = message.content.split()
-
+ 
  if s[0] == 'Ping':
   await message.channel.send('pong')
 
