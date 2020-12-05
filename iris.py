@@ -1,8 +1,13 @@
 #-*- coding:utf-8 -*-
 
 
-import discord
+#DB, discord, 크롤링
 
+
+
+
+
+import discord
 
 import datetime
 import bs4
@@ -11,6 +16,10 @@ import requests
 
 
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
+
+
+
+#매일아침 6시마다 크롤링
 
 
 
@@ -34,6 +43,7 @@ async def on_ready():
 async def on_message(message):
  s = message.content.split()
 
+ #입출력
  if s[0] == 'Ping':
   await message.channel.send('pong')
 
